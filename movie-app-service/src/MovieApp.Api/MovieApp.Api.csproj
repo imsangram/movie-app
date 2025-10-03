@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>35c8d104-911c-4b64-bcfd-cd58f6b90598</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MovieApp.Application\MovieApp.Application.csproj" />
+    <ProjectReference Include="..\MovieApp.Infrastructure\MovieApp.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
