@@ -39,7 +39,8 @@ The project uses **three model layers** for clarity, which helps us with data ab
 - **Caching with some trade-offs**
   - Listing data has been cached locally to avoid making expensive calls to the API as the data is less likely to change where as movie detail API call was not cached to make sure we always show latest and cheapest pricing.
 
-## ⚡ Performance Improvements
+## ⚡ Possible Improvements
+
 1. If the movie listing grows exponentially, it would be ideal to have it with pagination and filtering support.
 2. If the numper of providers increase, we may need to find more appropriate solution where client can be updated through events or stream about the cheapest price.
 3. Integration testing to make sure that API doesn't fail when contract changes.
